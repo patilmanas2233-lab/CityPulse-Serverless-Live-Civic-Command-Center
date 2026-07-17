@@ -7,7 +7,7 @@
 
 CityPulse is a full-stack, cloud-native civic engagement dashboard designed to track public urban issues from initial submission to final resolution. Built with an event-driven serverless architecture, the platform empowers residents to report hazards (e.g., potholes, broken traffic signals, garbage overflows) while providing city staff with a real-time command center interface to triage and monitor current incident activities.
 
-![CityPulse Dashboard Preview](civic1.jpg)
+![CityPulse Dashboard Preview](civic1.png)
 
 ---
 
