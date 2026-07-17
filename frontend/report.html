@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CityPulse | Report</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="shell nav">
+        <a class="brand" href="home.html">
+          <span class="brand-mark">CP</span>
+          <span>CityPulse</span>
+        </a>
+        <nav class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="report.html" class="active">Report</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="panel">
+        <div class="page-heading">
+          <h1>Report a civic issue</h1>
+          <p>Submit a detailed report with location, issue category, and a short description. The platform supports potholes, accidents, fallen trees, blocked roads, and roadside garbage.</p>
+        </div>
+        <div class="form-grid">
+          <div class="panel form-panel">
+            <form id="reportForm">
+              <div class="field">
+                <label for="title">Issue title</label>
+                <input id="title" name="title" type="text" placeholder="Example: Large pothole near school gate" required />
+              </div>
+              <div class="field">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                  <option value="">Choose a category</option>
+                  <option>Pothole</option>
+                  <option>Accident</option>
+                  <option>Tree on road</option>
+                  <option>Garbage</option>
+                  <option>Blocked road</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="location">Location</label>
+                <input id="location" name="location" type="text" placeholder="Example: 14th Street, South Block" required />
+              </div>
+              <div class="field">
+                <label for="detail">What happened?</label>
+                <textarea id="detail" name="detail" placeholder="Briefly describe the situation and urgency." required></textarea>
+              </div>
+              <div class="field">
+                <label for="uploadInput">Attach photo</label>
+                <label class="dropzone" id="dropzone">
+                  <input id="uploadInput" name="upload" type="file" accept="image/*" />
+                  <span>Click to upload or drag a photo here</span>
+                </label>
+                <img id="preview" class="preview" alt="Selected preview" />
+              </div>
+              <button class="btn btn-primary" type="submit">Submit report</button>
+              <div id="status" class="status info">Your report will appear on the home feed after submission.</div>
+            </form>
+          </div>
+          <div class="panel list-card">
+            <h3>Suggested incident types</h3>
+            <ul>
+              <li>Road surface damage such as potholes or cracks</li>
+              <li>Traffic incidents, vehicle collisions, or road obstruction</li>
+              <li>Fallen trees or branches blocking traffic</li>
+              <li>Garbage piles, illegal dumping, or waste spillovers</li>
+              <li>Urgent hazards that need immediate public maintenance</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
