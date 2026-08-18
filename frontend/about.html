@@ -3,49 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn how CityPulse streamlines civic issue reporting and tracks municipal resolutions in real time." />
     <title>CityPulse | About</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Navigation Header -->
     <header class="topbar">
       <div class="shell nav">
-        <a class="brand" href="home.html">
-          <span class="brand-mark">CP</span>
-          <span>CityPulse</span>
+        <a class="brand" href="home.html" aria-label="CityPulse Homepage">
+          <span class="brand-mark" aria-hidden="true">CP</span>
+          <span class="brand-name">CityPulse</span>
         </a>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Primary Navigation">
           <a href="home.html">Home</a>
           <a href="report.html">Report</a>
-          <a href="about.html" class="active">About</a>
+          <a href="about.html" class="active" aria-current="page">About</a>
         </nav>
       </div>
     </header>
 
+    <!-- Main Content -->
     <main class="shell">
-      <section class="panel">
-        <div class="page-heading">
-          <h1>How this civic reporting experience works</h1>
-          <p>CityPulse combines a polished public-facing portal with a simple reporting workflow. Residents submit issues, city teams review them, and the dashboard updates statuses live so everyone can see what is pending, in progress, or resolved.</p>
-        </div>
-        <div class="stats-grid">
-          <div class="panel stat-card">
-            <span>Fast submission</span>
-            <strong>1 min</strong>
-            <span>Capture location, category, and photo in a single flow.</span>
+      <!-- Overview Section -->
+      <section class="panel page-heading" aria-labelledby="main-heading">
+        <h1 id="main-heading">How this civic reporting experience works</h1>
+        <p class="subtitle">
+          CityPulse bridges the gap between residents and city services. Submit localized issues in seconds, monitor live status updates, and track transparent municipal progress across your neighborhood.
+        </p>
+      </section>
+
+      <!-- Key Value Highlights -->
+      <section class="stats-grid" aria-label="Platform Highlights">
+        <article class="panel stat-card">
+          <span class="stat-badge">Efficiency</span>
+          <h2 class="stat-value">1 min</h2>
+          <p class="stat-desc">Fast submission. Capture location, category details, and photos in a unified flow.</p>
+        </article>
+
+        <article class="panel stat-card">
+          <span class="stat-badge">Transparency</span>
+          <h2 class="stat-value">Live feed</h2>
+          <p class="stat-desc">Clear visibility. Follow real-time dashboard updates from pending review to completion.</p>
+        </article>
+
+        <article class="panel stat-card">
+          <span class="stat-badge">Impact</span>
+          <h2 class="stat-value">Priority</h2>
+          <p class="stat-desc">Smarter triage. Automated routing helps municipal teams address high-hazard issues faster.</p>
+        </article>
+      </section>
+
+      <!-- Process Workflow Timeline -->
+      <section class="panel workflow-section" aria-labelledby="workflow-heading">
+        <h2 id="workflow-heading">The 3-Step Lifecycle</h2>
+        <div class="workflow-steps">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3>Report Issue</h3>
+            <p>Pinpoint the location, attach a photo, and categorize the hazard.</p>
           </div>
-          <div class="panel stat-card">
-            <span>Clear visibility</span>
-            <strong>Live feed</strong>
-            <span>Each issue appears in the home feed with its current handling status.</span>
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3>City Triage</h3>
+            <p>Municipal departments verify reports and dispatch active work crews.</p>
           </div>
-          <div class="panel stat-card">
-            <span>Better action</span>
-            <strong>Priority</strong>
-            <span>Crews can focus on urgent hazards first and reduce response delays.</span>
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3>Resolution</h3>
+            <p>Receive live verification updates once the fix is inspected and completed.</p>
           </div>
         </div>
       </section>
+
+      <!-- Interactive FAQ Section -->
+      <section class="panel faq-section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
+        
+        <details class="faq-item">
+          <summary>Can I submit reports anonymously?</summary>
+          <p>Yes. You can opt out of contact sharing while still tracking the progress of your submitted ticket through its unique ID.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What types of issues should I report here?</summary>
+          <p>CityPulse is designed for non-emergency issues like potholes, broken streetlights, graffiti, illegal dumping, and damaged sidewalks. For immediate emergencies, please contact 911 or local emergency lines.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How long does typical resolution take?</summary>
+          <p>Resolution windows vary by hazard severity and department availability. Average non-critical issues are acknowledged within 24 hours.</p>
+        </details>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="shell footer-inner">
+        <p>&copy; 2026 CityPulse Civic Portal. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="app.js"></script>
   </body>
