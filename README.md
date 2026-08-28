@@ -39,7 +39,9 @@ The application leverages a decoupled, serverless structure to optimize performa
 * **Incident Lifecycle Workspace:** Tracks hazards through color-coded status pills (`PENDING`, `IN PROGRESS`, `RESOLVED`) alongside department assignment logs and relative updated timestamps.
 * **Granular Image Upload Architecture:** Leverages pre-signed cryptographically signed authorization strings to allow clients direct S3 binary access, keeping data transfers highly secure and cost-efficient.
 ** System made to work efficiently and more stable according to the updates and used stable dependency version
-  ** There was requirement of the stable system that can be scalable too that can work across large network and the people and can be scaled more than it is now 
+  ** There was requirement of the stable system that can be scalable too that can work across large network and the people and can be scaled more than it is now
+  ** This system emphasises the stable environment for civic command centre , using stable versions and stable versions
+  
 
 ---
 
