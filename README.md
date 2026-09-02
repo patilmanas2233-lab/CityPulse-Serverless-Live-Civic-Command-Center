@@ -18,6 +18,8 @@ The application leverages a decoupled, serverless structure to optimize performa
 * **Frontend Layer:** A single-page, responsive dashboard utilizing modern glassmorphic UI conventions, custom CSS gradients, and vanilla JavaScript async network streams to interface directly with cloud resources.
 * **API Gateway Node:** Acts as the secure entry point, handling RESTful routes and enabling seamless Cross-Origin Resource Sharing (CORS) preflight exchanges between the browser and the AWS cloud ecosystem.
 * **Secure File Pipeline (S3 Pre-signed URLs):** Rather than routing heavy media uploads through intermediate servers or lambdas, the application calls a secure backend gateway to fetch transient **S3 Pre-signed URLs**. The frontend client then securely uploads image evidence *directly* to an isolated Amazon S3 bucket, ensuring optimal upload speeds and minimal resource consumption.
+* This project combines the live system to send messages and updates related to the commands anyone or the authorised person wants to send to
+* Here we are using s3 buckets to send the request using the s3 pre-signed url
 
 ---
 
